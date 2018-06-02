@@ -34,7 +34,7 @@ jQuery(document).ready(function () {
         // Add text to page preloader
         pagePreLoaderText = '',
         //1, 2, 3, 4, 5 or 6
-        pagePreLoaderStyle = '1',
+        pagePreLoaderStyle = '7',
         // Enable or disable Parallax Effect (true / false)
         parallaxEffect = true,
         // Enable or Disable Animation (true / false)
@@ -103,6 +103,10 @@ jQuery(document).ready(function () {
 
         if (pagePreLoaderStyle >= 1 && pagePreLoaderStyle <= 6) {
             jQuery('body').addClass('page-preloader-style-' + pagePreLoaderStyle);
+        }
+
+        if (pagePreLoaderStyle === '7') {
+            jQuery('.gfort-page-preloader-container').append('<img src="javanoroeste-images/load.gif" class="load-gif-java">');
         }
 
         if (pagePreLoaderText !== '') {
